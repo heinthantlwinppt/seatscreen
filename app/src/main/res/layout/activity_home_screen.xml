@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/whiteBackground" >
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/common_header" />
+
+    <TextView
+        android:id="@+id/selectText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/header"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginTop="20.0dip"
+        android:text="@string/select"
+        android:textColor="@color/text_color"
+        android:textSize="14.0sp" />
+
+    <RelativeLayout
+        android:id="@+id/citySelectLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectText"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="10.0dip" >
+
+        <RelativeLayout
+            android:id="@+id/city1SelectLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="60.0dip"
+            android:background="@layout/rounded_border_city_select1" >
+
+            <TextView
+                android:id="@+id/fromText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:text="@string/from"
+                android:textColor="@color/text_color"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:id="@+id/source"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20.0dip"
+                android:textSize="15sp"
+                android:text="@string/touch_to_enter_city_name" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/city2SelectLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="60.0dip"
+            android:layout_below="@id/city1SelectLayout" 
+            android:background="@layout/rounded_border_city_select2">
+
+            <TextView
+                android:id="@+id/toText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:text="@string/to"
+                android:textColor="@color/text_color"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:id="@+id/destination"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20.0dip"
+                android:textSize="15sp"
+                android:text="@string/touch_to_enter_city_name" />
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/swap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30.0dip"
+            android:background="@null"
+            android:src="@drawable/swap" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/dojText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/citySelectLayout"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginTop="20.0dip"
+        android:text="@string/doj"
+        android:textColor="@color/text_color"
+        android:textSize="14.0sp" />
+
+    <RelativeLayout
+        android:id="@+id/dateSelectLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip"
+        android:layout_below="@+id/dojText"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="10.0dip" 
+        android:background="@layout/rounded_border_gradient">
+
+        <ImageButton
+            android:id="@+id/calendarIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:background="@null"
+            android:src="@drawable/calendar_icon" />
+
+        <TextView
+            android:id="@+id/dateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20.0dip"
+            android:hint="Touch here to choose a date"
+            android:textColor="@color/text_color"
+            android:textSize="18.0sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/searchbottomBarHome"
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10.0dip"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:background="@drawable/selector_continue_btn" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/search_bus"
+            android:textColor="#ffffffff"
+            android:textSize="22.0sp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/margin"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_above="@id/searchbottomBarHome"
+        android:layout_marginBottom="15.0dip"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:background="#ffcccccc" />
+
+</RelativeLayout>
