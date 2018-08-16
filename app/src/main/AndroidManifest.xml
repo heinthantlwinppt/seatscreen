@@ -20,7 +20,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".seatselectionactivity" />
-        <activity android:name=".recycleactivity"></activity>
+        <activity android:name=".recycleactivity">
+
+        </activity>
     </application>
 
 </manifest>

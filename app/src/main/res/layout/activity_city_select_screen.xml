@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/common_header_with_sub_title" />
+
+    <RelativeLayout
+        android:id="@+id/searchLayoutOuter"
+        android:layout_width="fill_parent"
+        android:layout_height="70.0dip"
+        android:layout_below="@id/header"
+        android:background="#ffeeeeee" >
+
+        <RelativeLayout
+            android:id="@+id/searchLayout"
+            android:layout_width="280.0dip"
+            android:layout_height="40.0dip"
+            android:layout_centerInParent="true"
+            android:background="@layout/rounded_border" >
+
+            <EditText
+                android:id="@+id/typeCity"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:background="@null"
+                android:drawableLeft="@drawable/search_icon"
+                android:drawablePadding="8.0dip"
+                android:drawableRight="@drawable/cross_icon"
+                android:hint="@string/autocomplete_city_hint"
+                android:paddingRight="8.0dip"
+                android:singleLine="true"
+                android:textColor="#ff888888"
+                android:textSize="14.0sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/citySuggestionListHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="20.0dip"
+        android:background="#ff333333"
+        android:paddingLeft="10.0dip"
+        android:text="@string/recent_search"
+        android:textColor="@color/white"
+        android:textSize="12.0sp" />
+
+    <ListView
+        android:id="@+id/citySuggestionList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#ffcccccc"
+        android:divider="@color/margin_color"
+        android:dividerHeight="1.0dip"
+        android:footerDividersEnabled="false" />
+
+    <TextView
+        android:id="@+id/topCitiesListHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="20.0dip"
+        android:background="#ff333333"
+        android:paddingLeft="10.0dip"
+        android:text="@string/top_search"
+        android:textColor="@color/white"
+        android:textSize="12.0sp"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/topCitiesList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#ffcccccc"
+        android:divider="@color/margin_color"
+        android:dividerHeight="1.0dip"
+        android:footerDividersEnabled="false"
+        android:overScrollMode="never"
+        android:visibility="gone" />
+
+</LinearLayout>
