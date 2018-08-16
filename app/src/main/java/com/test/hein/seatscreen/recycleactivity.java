@@ -24,7 +24,8 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
-public class recycleactivity extends AppCompatActivity {
+public class
+recycleactivity extends AppCompatActivity {
     private static final String TAG = "RecyclerViewExample";
     private List<Model> feedsList;
     private RecyclerView mRecyclerView;
