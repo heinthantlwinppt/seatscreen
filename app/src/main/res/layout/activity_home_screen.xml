@@ -93,6 +93,7 @@
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
             android:background="@color/whiteBackground"
+            android:src="@drawable/swap"
             android:layout_marginLeft="30.0dip"
              />
     </RelativeLayout>
@@ -127,6 +128,7 @@
             android:layout_centerVertical="true"
             android:layout_marginLeft="10.0dip"
             android:background="@color/whiteBackground"
+            android:src="@drawable/calendar_icon"
             />
 
         <TextView
