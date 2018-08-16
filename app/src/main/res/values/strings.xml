@@ -1,0 +1,171 @@
+<resources>
+    <string name="app_name">seatscreen</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="select">Select your route</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="doj">Date of journey</string>
+    <string name="search_bus">Search buses</string>
+    <string name="touch_to_enter_city_name">Touch to enter a city name</string>
+    <string name="autocomplete_city_hint">Enter a city name</string>
+    <string name="recent_search">Recent searches</string>
+    <string name="top_search">Top searches</string>
+    <string name="today">Today</string>
+    <string name="tomorrow">Tomorrow</string>
+    <string name="done">DONE</string>
+    <string name="cancel">Cancel</string>
+    <string name="departure_address">Depature Adrress:</string>
+    <string name="bus_service">Bus Service:</string>
+    <string name="telephone">Telephone: </string>
+    <string name="teleprefix">+95</string>
+    <string name="price">Price:</string>
+    <string name="total_seat">Total Seat:</string>
+    <string name="call">CALL</string>
+    <string name="buy_now">Buy Now</string>
+    <string name="send_sms">Send Sms</string>
+    <string name="bus_fare">Bus fare</string>
+    <string name="bus_time">Time</string>
+    <string name="ratings">Ratings</string>
+    <string name="select_a_bus">Select a Bus</string>
+    <string name="rupees">₹</string>
+    <string name="lower">Lower</string>
+    <string name="upper">Upper</string>
+    <string name="seats_selected">Selected seats:</string>
+    <string name="available">Available</string>
+    <string name="booked">Booked</string>
+    <string name="selected">Selected</string>
+    <string name="ladies">Ladies</string>
+    <string name="goBack">Go back</string>
+    <string name="instruction">Tap below to select seats</string>
+    <string name="total_fare_text">Total fare</string>
+    <string name="agent_info">Send Sms for Further process!   </string>
+    <string name="boardingPointText">Boarding from</string>
+    <string name="boardingPointSelectionHeader">Select your boarding point</string>
+    <string name="rtc_caveat">Please Note: The price is exclusive of reservation fee and other charges as per KSRTC T&amp;C</string>
+    <string name="continue_booking_text">Continue booking</string>
+    <string name="Please_fill_mpin">Please fill the M-pin</string>
+    <string name="atlrt_sending_this_amount">Your Sending amount is =</string>
+    <string name="checkbalance">*669*10*</string>
+    <string name="checkProfileAPI">*669*12*1*</string>
+    <string name="loyaltyAPI">*669*5*</string>
+    <string name="DiscountMoneyAPI">*669*5*</string>
+
+
+    <!-- Hint text -->
+    <string name="hintName_mpin">M-pin</string>
+    <string name="hintName_recipientName">Recipient Name </string>
+    <string name="hintName_fixedCoutrycode">+95</string>
+    <string name="hintName_amount">Amount</string>
+    <string name="hintName_busNo">Bus No.</string>
+    <string name="hintName_enterMobileNo">Enter Mobile No.</string>
+    <string name="hintName_AgentNo">Agent No.</string>
+    <string name="hintName_RecipientNo">Recipient No.</string>
+    <string name="hintName_OldPin">Old Pin.</string>
+    <string name="hintName_newPin">New Pin</string>
+    <string name="hintName_confirmPin">Confirm Pin</string>
+    <string name="hintName_date">Date</string>
+    <string name="hintName_UserName">User Name</string>
+    <string name="hintName_MobileNo">Mobile No.</string>
+    <string name="hintName_otherContact">Other Contact</string>
+    <string name="hintName_NRC">NRC No.</string>
+    <string name="hintedittext_start_date">Start Date</string>
+    <string name="hintedittext_end_date">End Date</string>
+    <string name="hintedittext_State">Please Select State</string>
+    <string name="hintedittext_City">Please Select City</string>
+    <!-- Title -->
+    <string name="title_CheckBalance">Check Balance</string>
+    <string name="title_ChangeProfile">Check Profile</string>
+    <string name="title_selectOption">Please select below option to update your Profile </string>
+    <string name="title_Registration">Registration page</string>
+    <string name="title_MOneyTransfet">Money Transfer</string>
+    <string name="title_LBusTicket">Local Bus Tickt</string>
+    <string name="title_CashOut">Cash Out</string>
+    <string name="title_SendMoney">Send Money</string>
+    <string name="title_lotery">Lottery</string>
+    <string name="title_subscriber_registration">Subscriber Registration</string>
+    <string name="title_changeLanguage">Select Your Language</string>
+    <string name="title_discountmoney">Discount Money</string>
+    <string name="title_loyalty">Loyalty</string>
+    <!--  <string name="title_loyalty">Loyalty</string> -->
+    <string name="title_confirmation">Transation Done</string>
+    <string name="title_AgentSearch">Search Agents Near by You </string>
+
+    <!-- buttons -->
+    <string name="btnSubmit">Submit</string>
+    <string name="btnFinish">Finish</string>
+    <string name="btnreceiveMoney">Receive Money</string>
+    <string name="btnsendMoney">Send Money</string>
+    <string name="current_version">Current Version</string>
+    <string name="onlineupdate">Online update</string>
+    <string name="loading">Loading .....</string>
+    <string name="button_search">Search.</string>
+    <string name="button_checkLoyalty">Check Bonus Point</string>
+    <string name="button_discountMOney">Check Discount Money</string>
+
+    <!-- Labels -->
+    <string name="lagentcde">  Agent No.</string>
+    <string name="lsubscriberNo">   Subscriber Name</string>
+    <string name="lsubscriberNumber">   Subscriber No.</string>
+    <string name="lcity">  City</string>
+    <string name="lidproof">  Id Proof</string>
+    <string name="larea">Area</string>
+    <string name="l_receipientNo">Receipient No</string>
+    <string name="l_Amount">Amount</string>
+    <string name="l_status">Status</string>
+    <string name="l_date">Date</string>
+    <string name="l_pending">Pending</string>
+    <string name="l_Delivered">Delivered</string>
+    <string name="l_transationType">Transation Type</string>
+    <string name="laddress">Address</string>
+    <string name="lmpin">Mpin</string>
+    <string name="sno">S No.</string>
+    <string name="sType">Pay to</string>
+    <string name="sAmount">100</string>
+    <string name="sDate">10/10/2014</string>
+    <string name="selectdate">Select Date</string>
+    <string name="sLoyaltyDiscount">Loyalty List</string>
+    <string name="sdicountMoneyList">Discount List</string>
+
+    <!-- Radio Button -->
+    <string name="radio_changeLanguage_En">English</string>
+    <string name="radio_changeLanguage_MY">Myanmar</string>
+    <string name="radio_Name">Name</string>
+    <string name="radio_NRC_Passport">NRC/Passport Id</string>
+    <string name="radio_MobileNo">Update Alternet Mobile No</string>
+
+    <!-- Toast Message -->
+    <string name="toast_password_not_match">Password not matched</string>
+    <string name="toast_fill_all_details">Please fill all details</string>
+    <string name="aboutus">Mobile Money focuses on innovative mobile centric payment systems under the supervision of Central Bank of Malaysia (Bank Negara Malaysia) and is permitted to operate:
+
+- E-wallet on May 2006 pursuant to Section 25(1) of the Payment
+  System Act 2003,
+- Remittance Service via e-money pursuant to Section 10 of the
+  Exchange Control Act 1953,
+
+
+Mobile Money provides a fully integrated system for users to make payment and transfer money in a very simple and convenient way. We provide the following systems and services: \n
+\n
+- Mobile Centric Payment System \n
+- Virtual Banking System \n
+- Instant Mobile Remittance \n
+- Mobile Parking \n
+- PAYPIN (Including eCek ) Services \n
+- Loyalty Program \n
+- Food Subsidy System \n
+- Online Marketing Tool with Anyone Can Pay Feature \n
+- Call to Park Service via e-money \n
+</string>
+    <string name="customer_Care">Call to customer care </string>
+    <string name="customer_Care_no">0976544445</string>
+    <string name="customer_Care_Call">Call</string>
+    <string name="custom_dialog_title">Title</string>
+    <string name="custom_dialog_message">Custom Message</string>
+
+</resources>
