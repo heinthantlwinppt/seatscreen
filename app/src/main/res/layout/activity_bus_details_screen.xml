@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout="@+id/busDetailsScreenLayout" >
+
+    <RelativeLayout
+        android:id="@+id/busDetailsLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffeeeeee"
+        android:clipChildren="true" >
+
+        <include
+            android:id="@+id/header"
+            layout="@layout/common_header_with_sub_title" />
+
+        <ScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/header"
+            android:fillViewport="true" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/busDetailsHeader"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffeeeeee"
+                    android:paddingBottom="5.0dip" >
+
+                    <RelativeLayout
+                        android:id="@+id/travelsAndTimeLayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true" >
+
+                        <TextView
+                            android:id="@+id/travels"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:textColor="@color/black"
+                            android:textSize="12.0sp" />
+
+                        <TextView
+                            android:id="@+id/journeyTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:textColor="@color/black"
+                            android:textSize="12.0sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/busTypeAndFareLayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/travelsAndTimeLayout"
+                        android:layout_marginBottom="5.0dip"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginRight="5.0dip" >
+
+                        <TextView
+                            android:id="@+id/busType"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:textColor="#ff666666"
+                            android:textSize="10.0sp" />
+
+                        <RelativeLayout
+                            android:id="@+id/fareLayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true" >
+
+                            <TextView
+                                android:id="@+id/fare"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:textColor="#ff4d8501"
+                                android:textSize="12.0sp" />
+
+                            <TextView
+                                android:id="@+id/rsText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="1.0dip"
+                                android:layout_toLeftOf="@+id/fare"
+                                android:text="@string/rupees"
+                                android:textColor="@color/black"
+                                android:textSize="12.0sp" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/seatLayoutMargin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="@color/margin_color" />
+
+                <LinearLayout
+                    android:id="@+id/seatLayoutHeader"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10.0dip" >
+
+                    <TextView
+                        android:id="@+id/instructionText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="@string/instruction"
+                        android:textColor="@color/black"
+                        android:textSize="14.0sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/noOfSeatsAvailable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:textColor="@color/black"
+                        android:textSize="14.0sp" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/seatLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10.0dip"
+                    android:background="@layout/seat_layout_border" />
+
+                <View
+                    android:id="@+id/seatSnapshotBorder"
+                    android:layout_width="fill_parent"
+                    android:layout_height="10.0dip"
+                    android:background="#ffeeeeee" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10.0dip" >
+
+                    <TextView
+                        android:id="@+id/selectedSeatsText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="@string/seats_selected"
+                        android:textColor="@color/margin_color"
+                        android:textSize="14.0sp" />
+
+                    <TextView
+                        android:id="@+id/totalFareText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="@string/total_fare_text"
+                        android:textColor="@color/margin_color"
+                        android:textSize="14.0sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10.0dip"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="10.0dip" >
+
+                    <TextView
+                        android:id="@+id/selectedSeats"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="S1,S2,S3,S4,S5,S6"
+                        android:textColor="@color/black"
+                        android:textSize="14.0sp" />
+
+                    <TextView
+                        android:id="@+id/totalFare"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Rs.100000"
+                        android:textColor="@color/black"
+                        android:textSize="14.0sp" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/seatSnapshotLineBorder"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="#ffdddddd" />
+
+                <RelativeLayout
+                    android:id="@+id/boardinPointLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/boardingPointSelectionIdentifierText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_marginTop="10.0dip"
+                        android:text="@string/boardingPointText"
+                        android:textColor="@color/black"
+                        android:textSize="14.0sp" />
+
+                    <RelativeLayout
+                        android:id="@+id/boardingPointSelectionButton"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40.0dip"
+                        android:layout_below="@+id/boardingPointSelectionIdentifierText"
+                        android:layout_margin="10.0dip"
+                        android:background="@layout/boarding_point_selection_background" >
+
+                        <TextView
+                            android:id="@+id/selectedBoardingPoint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5.0dip"
+                            android:text="@string/boardingPointSelectionHeader"
+                            android:textSize="14.0sp" />
+
+                        <ImageView
+                            android:id="@+id/boardingPointSelectionIndicator"
+                            android:layout_width="29.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="5.0dip"
+                            android:background="@null"
+                            android:src="@drawable/select_bus_arrow" />
+
+                        <View
+                            android:id="@+id/boardingPointSelectorMargin"
+                            android:layout_width="1.0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_toLeftOf="@+id/boardingPointSelectionIndicator"
+                            android:background="@color/margin_color" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/spaceFiller"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.0dip"
+                    android:layout_weight="1.0"
+                    android:background="#ffeeeeee" />
+
+                <TextView
+                    android:id="@+id/txt_rtc_terms"
+                    style="@style/deemphasized_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8.0dip"
+                    android:text="@string/rtc_caveat"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/continueButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45.0dip"
+                    android:layout_gravity="bottom|center"
+                    android:layout_margin="10.0dip"
+                    android:background="@drawable/selector_continue_btn"
+                    android:gravity="center"
+                    android:text="@string/continue_booking_text"
+                    android:textColor="@color/white"
+                    android:textSize="18.0sp" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/tintView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ff000000"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/dropShadow"
+        android:layout_width="8.0dip"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="45.0dip"
+        android:background="@drawable/drop_shadow"
+        android:visibility="invisible" />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:progressDrawable="@drawable/progress"
+        android:visibility="invisible" />
+
+    <View
+        android:id="@+id/sideOverlay"
+        android:layout_width="45.0dip"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/side_overlay"
+        android:clickable="true"
+        android:visibility="invisible" />
+
+</RelativeLayout>
