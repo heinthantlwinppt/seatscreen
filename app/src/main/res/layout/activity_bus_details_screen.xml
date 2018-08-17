@@ -94,7 +94,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginRight="1.0dip"
                                 android:layout_toLeftOf="@+id/fare"
-                                android:text="@string/rupees"
+                                android:text="@string/kyats"
                                 android:textColor="@color/black"
                                 android:textSize="12.0sp" />
                         </RelativeLayout>
@@ -190,7 +190,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
-                        android:text="Rs.100000"
+                        android:text="ks.10000"
                         android:textColor="@color/black"
                         android:textSize="14.0sp" />
                 </RelativeLayout>

@@ -34,6 +34,7 @@
     <string name="ratings">Ratings</string>
     <string name="select_a_bus">Select a Bus</string>
     <string name="rupees">₹</string>
+    <string name="kyats">ks</string>
     <string name="lower">Lower</string>
     <string name="upper">Upper</string>
     <string name="seats_selected">Selected seats:</string>
