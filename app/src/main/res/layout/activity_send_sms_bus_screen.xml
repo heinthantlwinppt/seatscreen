@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/whiteBackground"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/common_header" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/header"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clipChildren="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/AgentName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10.0dip"
+                android:gravity="center"
+                android:text="Send Sms to AgentName for Further process! "
+                android:textColor="@color/black"
+                android:textSize="14.0sp" />
+
+            <RelativeLayout
+                android:id="@+id/pinnedicketLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:id="@+id/ticketLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10.0dip"
+                    android:background="@layout/boarding_point_selection_background"
+                    android:padding="10.0dip" >
+
+                    <TextView
+                        android:id="@+id/PhoneNo"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:paddingBottom="5.0dip"
+                        android:paddingTop="5.0dip"
+                        android:text="9450048535"
+                        android:textColor="@color/black"
+                        android:textSize="14.0sp" />
+
+                    <View
+                        android:id="@+id/line1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0dip"
+                        android:layout_below="@+id/PhoneNo"
+                        android:layout_marginTop="10.0dip"
+                        android:background="@color/margin_color"
+                        android:paddingBottom="5.0dip" />
+
+                    <TextView
+                        android:id="@+id/trip"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/line1"
+                        android:drawableLeft="@drawable/location"
+                        android:drawablePadding="3.0dip"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="5.0dip"
+                        android:paddingTop="5.0dip"
+                        android:text="Bangalore to Vishakapatnam"
+                        android:textColor="@color/red"
+                        android:textSize="24.0sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/dateOfJourney"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/trip"
+                        android:drawableLeft="@drawable/calendar"
+                        android:drawablePadding="3.0dip"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="5.0dip"
+                        android:paddingTop="5.0dip"
+                        android:text=" Fri 24 Oct"
+                        android:textColor="@color/black"
+                        android:textSize="14.0sp" />
+
+                    <EditText
+                        android:id="@+id/SenderInfo"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/dateOfJourney"
+                        android:background="@color/lightgray02"
+                        android:drawableLeft="@drawable/bus"
+                        android:drawablePadding="3.0dip"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="5.0dip"
+                        android:paddingTop="5.0dip"
+                        android:textColor="@color/black"
+                        android:textSize="14.0sp" />
+
+                    <View
+                        android:id="@+id/line2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0dip"
+                        android:layout_below="@+id/SenderInfo"
+                        android:background="@color/margin_color" />
+
+                    <LinearLayout
+                        android:id="@+id/passengerList"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/SenderInfo"
+                        android:layout_marginBottom="30.0dip"
+                        android:orientation="vertical"
+                        android:paddingBottom="5.0dip"
+                        android:paddingTop="5.0dip" />
+
+                    <View
+                        android:id="@+id/line3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0dip"
+                        android:layout_below="@id/passengerList"
+                        android:background="@color/margin_color" />
+
+                    <LinearLayout
+                        android:id="@+id/SenderNameLayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/line3"
+                        android:layout_marginBottom="10.0dip"
+                        android:layout_marginTop="10.0dip"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:gravity="left"
+                            android:text="Sender Name"
+                            android:textColor="@color/black" />
+
+                        <EditText
+                            android:id="@+id/senderName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:background="@color/lightgray02"
+                            android:gravity="left"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/line4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0dip"
+                        android:layout_below="@+id/SenderNameLayout"
+                        android:background="@color/margin_color" />
+
+                    <LinearLayout
+                        android:id="@+id/SeatBookLayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/line4"
+                        android:layout_marginBottom="10.0dip"
+                        android:layout_marginTop="10.0dip"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:gravity="left"
+                            android:text="Number Of Seat Book"
+                            android:textColor="@color/black" />
+
+                        <EditText
+                            android:id="@+id/seatNumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.2"
+                            android:background="@color/lightgray02"
+                            android:gravity="center_horizontal"
+                            android:inputType="number"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/line5"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0dip"
+                        android:layout_below="@+id/SeatBookLayout"
+                        android:background="@color/margin_color" />
+
+                    <LinearLayout
+                        android:id="@+id/perTicketLayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/line5"
+                        android:layout_marginBottom="10.0dip"
+                        android:layout_marginTop="10.0dip"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:gravity="left"
+                            android:text="Per Ticket Fare"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/perTicketfare"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.1"
+                            android:gravity="center_horizontal"
+                            android:text="" />
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/line6"
+                        android:layout_width="fill_parent"
+                        android:layout_height="1.0dip"
+                        android:layout_below="@+id/perTicketLayout"
+                        android:background="@color/margin_color" />
+
+                    <LinearLayout
+                        android:id="@+id/toatlFare"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/line6"
+                        android:layout_marginBottom="10.0dip"
+                        android:layout_marginTop="10.0dip"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:gravity="left"
+                            android:text="@string/total_fare_text"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/totalFare"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:gravity="right"
+                            android:text="" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/confirmBookingImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/bg_pending" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20.0dip"
+                    android:src="@drawable/paper_clip" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/SendSmsBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="45.0dip"
+                android:layout_gravity="bottom|center"
+                android:layout_margin="10.0dip"
+                android:background="@drawable/selector_continue_btn"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="Send SMS"
+                android:textColor="@color/white"
+                android:textSize="18.0sp"
+                android:visibility="visible" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

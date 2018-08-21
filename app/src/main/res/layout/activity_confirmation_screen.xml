@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_check_balance_drawable_"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/confirmation_screen_relative"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/confirmation_screen_textview"
+            style="@style/TextAppearance.ELarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:text="@string/title_confirmation" />
+
+        <RelativeLayout
+            android:id="@+id/confrimation_relative_details"
+            android:layout_width="fill_parent"
+            android:layout_height="300dp"
+            android:layout_below="@+id/confirmation_screen_textview"
+            android:layout_margin="10dp"
+            android:background="@drawable/border" >
+
+            <TextView
+                android:id="@+id/confirmation_Screen_textview_receiverName"
+                style="@style/TextAppearance.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:text="@string/l_receipientNo"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/confirmation_Screen_textview_receiverName_add"
+                style="@style/TextAppearance.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+                android:text="@string/l_receipientNo"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/confirmation_Screen_textview_transationType"
+                style="@style/TextAppearance.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/confirmation_Screen_textview_receiverName"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:text="@string/l_transationType"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/confirmation_Screen_textview_transationTypeAdd"
+                style="@style/TextAppearance.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/confirmation_Screen_textview_receiverName_add"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/confirmation_Screen_textview_transationType"
+                android:layout_below="@+id/confirmation_Screen_textview_receiverName"
+                android:lines="1"
+                android:text="@string/l_transationType"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/confirmation_Screen_textview_transationType_Amount"
+                style="@style/TextAppearance.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/confirmation_Screen_textview_transationType"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:text="@string/l_Amount"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/confirmation_Screen_textview_transationType_Amountadd"
+                style="@style/TextAppearance.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/confirmation_Screen_textview_receiverName_add"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/confirmation_Screen_textview_transationType_Amount"
+                android:layout_below="@+id/confirmation_Screen_textview_transationType"
+                android:text="@string/l_Amount"
+                android:textColor="@color/white" />
+
+
+            <TextView
+                android:id="@+id/confirmation_Screen_textview_transationType_isDeliverd2"
+                style="@style/TextAppearance.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/confirmation_Screen_textview_transationType_Amount"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:text="@string/l_status"
+                android:visibility="gone"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/confirmation_Screen_textview_transationType_isDeliverdadd"
+                style="@style/TextAppearance.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/l_status"
+                android:layout_alignParentRight="true"
+                android:visibility="gone"
+                android:layout_alignLeft="@+id/confirmation_Screen_textview_transationType_Amountadd"
+                android:layout_alignTop="@+id/confirmation_Screen_textview_transationType_isDeliverd"
+                android:textColor="@color/red" />
+            <TextView
+                android:id="@+id/confirmation_Screen_textview_transationType_isDeliverd"
+                style="@style/TextAppearance.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/confirmation_Screen_textview_transationType_Amount"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:text="@string/l_status"
+                android:visibility="gone"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/confirmation_Screen_textview_transationType_Date"
+                style="@style/TextAppearance.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/confirmation_Screen_textview_transationType_isDeliverd"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:text="@string/l_date"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/confirmation_Screen_textview_transationType_Dateadd"
+                style="@style/TextAppearance.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/confirmation_Screen_textview_transationType_Date"
+                android:layout_below="@+id/confirmation_Screen_textview_transationType_isDeliverd"
+                android:text="@string/l_date"
+                android:layout_alignLeft="@+id/confirmation_Screen_textview_transationType_isDeliverdadd"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/white" />
+
+
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/confirmation_screen_button"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/border"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                style="@style/TextAppearance.Large"
+                android:text="@string/btnFinish"
+                android:textColor="@color/white"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/confrimation_relative_details"
+            android:layout_marginTop="10dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

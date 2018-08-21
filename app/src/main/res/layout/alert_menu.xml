@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bookbg_"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/alert_menu_image_ussd"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ussd" />
+
+    <ImageView
+        android:id="@+id/alert_menu_image_Intenet"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/internet" />
+
+    <TextView
+        android:id="@+id/alert_menu_text_ussd"
+        style="@style/TextAppearance.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alert_menu_image_ussd"
+        android:layout_alignLeft="@+id/alert_menu_image_ussd"
+        android:layout_alignRight="@+id/alert_menu_image_ussd"
+        android:gravity="center_horizontal"
+        android:text="USSD" />
+    <TextView
+        android:id="@+id/alert_menu_text_interet"
+        style="@style/TextAppearance.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alert_menu_image_Intenet"
+        android:layout_alignLeft="@+id/alert_menu_image_Intenet"
+        android:layout_alignRight="@+id/alert_menu_image_Intenet"
+        android:gravity="center_horizontal"
+        android:text="Internet" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:weightSum="2"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/alert_menu_text_interet"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/alert_menu_btn_always"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/download_btn"
+            android:clickable="true"
+            android:text="Always"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/alert_menu_btn_JustOnce"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/download_btn"
+            android:layout_weight="1"
+            android:clickable="true"
+              android:layout_gravity="center_vertical"
+            android:text="Just Once"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+    
+</RelativeLayout>

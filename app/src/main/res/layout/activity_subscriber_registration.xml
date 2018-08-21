@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register_gb"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/subscriber_registration_title"
+        style="@style/TextAppearance.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:text="@string/title_subscriber_registration"
+        android:textColor="@color/white" />
+
+    <ScrollView
+        android:id="@+id/sbcriber_registration_scrollview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/subscriber_registration_title" >
+
+        <RelativeLayout
+            android:id="@+id/sbcriber_registration_scrollview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/Subscriber_registration_edit_agentcode"
+                style="@style/Edittext_medium"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:drawableLeft="@drawable/user"
+                android:hint="@string/lagentcde"
+                android:inputType="numberSigned"
+                android:padding="5dp" />
+
+            <EditText
+                android:id="@+id/Subscriber_registration_edit_subscriberName"
+                style="@style/Edittext_medium"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/Subscriber_registration_edit_agentcode"
+                android:layout_alignRight="@+id/Subscriber_registration_edit_agentcode"
+                android:layout_below="@+id/Subscriber_registration_edit_agentcode"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/user"
+                android:hint="@string/lsubscriberNo"
+                android:padding="5dp" />
+
+            <EditText
+                android:id="@+id/Subscriber_registration_edit_mobileNo"
+                style="@style/Edittext_medium"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/Subscriber_registration_edit_agentcode"
+                android:layout_alignRight="@+id/Subscriber_registration_edit_agentcode"
+                android:layout_below="@+id/Subscriber_registration_edit_subscriberName"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/user"
+                android:hint="@string/lsubscriberNumber"
+                android:inputType="numberSigned"
+                android:padding="5dp" />
+
+            <EditText
+                android:id="@+id/Subscriber_registration_edit_idproof"
+                style="@style/Edittext_medium"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/Subscriber_registration_edit_agentcode"
+                android:layout_alignRight="@+id/Subscriber_registration_edit_agentcode"
+                android:layout_below="@+id/Subscriber_registration_edit_mobileNo"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/user"
+                android:hint="@string/lidproof"
+                android:padding="5dp" />
+
+            <Spinner
+                android:id="@+id/Subscriber_registration_edit_city"
+                style="@style/Edittext_medium"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/Subscriber_registration_edit_agentcode"
+                android:layout_alignRight="@+id/Subscriber_registration_edit_agentcode"
+                android:layout_below="@+id/Subscriber_registration_edit_idproof"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/user"
+                android:padding="5dp"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/Subscriber_registration_edit_area"
+                style="@style/Edittext_medium"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/Subscriber_registration_edit_agentcode"
+                android:layout_alignRight="@+id/Subscriber_registration_edit_agentcode"
+                android:layout_below="@+id/Subscriber_registration_edit_city"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/user"
+                android:hint="@string/larea"
+                android:padding="5dp" />
+
+            <EditText
+                android:id="@+id/Subscriber_registration_edit_address"
+                style="@style/Edittext_medium"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/Subscriber_registration_edit_agentcode"
+                android:layout_alignRight="@+id/Subscriber_registration_edit_agentcode"
+                android:layout_below="@+id/Subscriber_registration_edit_area"
+                android:layout_marginTop="5dp"
+                android:hint="@string/laddress"
+                android:padding="5dp" />
+
+            <EditText
+                android:id="@+id/Subscriber_registration_edit_mpin"
+                style="@style/Edittext_medium"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/Subscriber_registration_edit_agentcode"
+                android:layout_alignRight="@+id/Subscriber_registration_edit_agentcode"
+                android:layout_below="@+id/Subscriber_registration_edit_address"
+                android:layout_marginTop="5dp"
+                android:hint="@string/laddress"
+                android:inputType="numberPassword"
+                android:padding="5dp" />
+
+            <Button
+                android:id="@+id/subscriber_register_button_submit"
+                style="@style/button_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Subscriber_registration_edit_mpin"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/btnSubmit" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

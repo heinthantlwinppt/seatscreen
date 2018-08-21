@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/cash_in_out_history_linear_tabs"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <Button
+            android:id="@+id/cash_in_out_button_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnreceiveMoney"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/cash_in_out_button_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnsendMoney"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/cash_in_out_button_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ALL I/O"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/cash_in_out_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/cash_in_out_history_linear_tabs"
+        android:cacheColorHint="#00000000"
+        android:horizontalSpacing="5dp"
+        android:dividerHeight="5dp"
+        android:isScrollContainer="false"
+        android:listSelector="@drawable/transparent_blank"
+        android:scrollbars="none" >
+    </ListView>
+
+</RelativeLayout>
